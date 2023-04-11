@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    
+    border: 2px solid black;
+    height: 500px;
+    width: 1000px;
+}
+
+.score-box{
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    border: 2px solid red;
+    left: 750px;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    top: 450px;
+    left: 980px;
+    animation: move 1s infinite linear; 
+}
+
+
+ .person{
+    position: absolute;
+    height: 100px;
+    width: 40px;
+    background-color: chartreuse;
+    top: 400px;
+    left: 20px;
+    
+    
+}
+
+.animate{
+    
+    animation: jump 500ms infinite linear; 
+}
+
+
+
+
+@keyframes move {
+    0%{
+        right: 0px;
+    }
+    50%{
+        right: 300px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+
+@keyframes jump {
+    0%{
+        top: 400px;
+    }
+    30%{
+        top: 300px;
+    }
+    70%{
+        top: 300px;
+    }
+    100%{
+        top: 400px;
+    }
+    
+}
+
+
+
+
+
+
